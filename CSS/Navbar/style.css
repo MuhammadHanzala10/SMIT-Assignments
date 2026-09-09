@@ -1,0 +1,48 @@
+:root{
+    --primary-color: #2a2d3e;   
+    --secondary-color: #1b1f2b;
+    --text-color: rgba(255, 255, 255, 0.945);
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 0px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+nav{
+    background-color: var(--secondary-color);
+    height: 25px;
+    padding: 10px;
+}
+
+.nav-button{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 10px;
+    margin-left: 10px;
+    border-left: 10px;
+    border-right: 10px;
+    border-color: var(--text-color);
+}
+
+.nav-button:hover{
+    border-style: groove;
+    border-left: 5px;
+    border-right: 5px;
+    height: 20px;
+    padding: 10px;
+}
+
+#current{
+    border-style: groove;
+    border-left: 5px;
+    border-right: 5px;
+    height: 20px;
+    padding: 10px;
+}
