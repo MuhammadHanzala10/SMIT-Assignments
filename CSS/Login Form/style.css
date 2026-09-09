@@ -75,9 +75,10 @@ button:hover{
     background-color: #357ab8;
 }
 
-#Remember
+#remember
 {
     color: var(--text-color);
+    text-align: left;
 }
 #or
 {
