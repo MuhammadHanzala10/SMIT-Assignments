@@ -62,30 +62,27 @@ nav{
 }
 
 .box{
-    display: flex;
-    flex-direction: row;
-}
-
-#box-left{
     border-color: var(--secondary-color);
     border-radius: 50px;
-    margin-top: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 50px;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
     background-color: var(--secondary-color);
     width: 40%;
     height: 500px;
+    display:inline-block;
+}
+
+#box-left{
     justify-self: left;
 }
 
 #box-right{
-    border-color: var(--secondary-color);
-    border-radius: 50px;
-    margin-top: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: var(--secondary-color);
-    width: 40%;
-    height: 500px;
     justify-self: right;
+}
+
+img{
+    height: 500px;
+    width: 100%;
+    border-radius: 50px;
 }
