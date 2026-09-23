@@ -61,6 +61,12 @@ nav{
     justify-content: center;
 }
 
+#Sec1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
 .box{
     border-color: var(--secondary-color);
     border-radius: 50px;
@@ -70,19 +76,59 @@ nav{
     background-color: var(--secondary-color);
     width: 40%;
     height: 500px;
-    display:inline-block;
+    justify-content: center;
 }
 
-#box-left{
-    justify-self: left;
-}
-
-#box-right{
-    justify-self: right;
-}
-
-img{
+#Pilot_image{
     height: 500px;
     width: 100%;
     border-radius: 50px;
+}
+
+#aircraft_heading{
+    font-size: xx-large;
+}
+
+#aircraft{
+    background-color: var(--secondary-color);
+    width: 90%;
+    height: 350px;
+    justify-self: center;
+    margin-top: 50px;
+    border-radius: 50px;
+    overflow-x: scroll;
+    scrollbar-color: var(--primary-color);
+    scrollbar-width: thin;
+    display: flex;
+    flex-flow:row nowrap;
+    margin-bottom: 500px;
+}
+
+#cards{
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    height: 80%;
+    align-self: center;
+    scrollbar-color: var(--primary-color);
+    scrollbar-width: thin;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#cards:hover{
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+.aircraft_images{
+    width: 320px;
+    height: 180px;
+    border-radius: 50px;
+}
+
+.card_text{
+    margin-top: 10%;
+    font-size: large;
 }
