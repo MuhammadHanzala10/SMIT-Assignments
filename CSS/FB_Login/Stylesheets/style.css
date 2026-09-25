@@ -120,7 +120,13 @@ svg{
     font-size: .7dvi;
 }
 
+#SignUp-link{
+    text-align: center;
+    height:2.9dvh;
+}
+
 #Create-account{
+    width: 20.2vw;
     height: 2.9dvh;
     border-radius: 20px;
     background-color: white;
