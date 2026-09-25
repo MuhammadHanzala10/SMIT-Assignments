@@ -20,41 +20,55 @@ body{
 
 #box-left{
     background-color: var(--primary-color);
-    height: 85dvh;
-    width: 65%;
+    height: 90dvh;
+    width: 75dvw;
     border-right: 1px;
     border-bottom: 1px;
     border-top: 0px;
     border-left: 0;
     border-style: solid;
-    border-color: black;
+    border-color: #DFE2E5;
     justify-self: start;
     align-self: start;
+    display: flex;
+    flex-flow: wrap;
 }
 
 #box-right{
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 2dvh;
+    justify-content: center;
+    align-content: center;
     background-color: var(--primary-color);
-    height: 85dvh;
-    width: 35%;
+    height: 90dvh;
+    width: 25dvw;
     border-left: 0px;
     border-bottom: 1px;
     border-top: 0;
     border-right: 0;
     border-style: solid;
-    border-color: black;
+    border-color: #DFE2E5;
     justify-self: end;
 }
 
 #box-bottom{
     background-color: var(--primary-color);
     align-self: end;
-    height: 15dvh;
+    height: 10dvh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    font-size:large;
+    color: #666A72;
 }
 
 svg{
-    height: 60px;
-    width: 60px;
-    margin: 40px;
+    height: 4dvh;
+    width: 4dvw;
+    margin-left: 8dvw;
+    margin-top: 5dvh;
 }
 
 #slogan{
@@ -62,7 +76,74 @@ svg{
     flex-direction: row-reverse;
     align-self: end;
     justify-self: start;
-    margin: 40px;
-    margin-top: 25%;
-    font-size: 60px;
+    margin-left: -3dvw;
+    margin-bottom: 6dvh;
+    font-size: 4.5dvb;
+    font-family: sans-serif;
+    
+}
+
+#Login_page_Pic{
+    height: 80dvh;
+    width: 38dvw;
+    margin-top: 2dvh;
+    margin-left: 6dvw;
+}
+
+#Login-text{
+    margin-bottom: -1dvh;
+    font-family: sans-serif;
+}
+
+.text-boxes{
+    width: 20dvw;
+    height: 4dvh;
+    border-radius: 15px;
+    border-color: #DFE2E5;
+    border-style: solid;
+    border-width: 2px;
+}
+
+#Login-button{
+    height: 2.9dvh;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#forgot-pass{
+    align-self: center;
+    text-decoration: none;
+    color: black;
+    margin-top: -.5dvh;
+    margin-bottom: 2dvh;
+    font-size: .7dvi;
+}
+
+#Create-account{
+    height: 2.9dvh;
+    border-radius: 20px;
+    background-color: white;
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+#meta-logo{
+    height: 2dvh;
+    width: 4dvh;
+    margin-left: 9dvw;
+    margin-top: -1.5dvh;
+}
+
+.Links-first{
+    margin-right: 1dvw;
+    margin-bottom: .5dvh;
+}
+
+.Links-second{
+    margin-right: .2dvw;
+}
+
+.Links-third{
+    margin-right: .5dvw;
 }
