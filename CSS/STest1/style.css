@@ -1,0 +1,134 @@
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+    --text-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+nav{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 90px;
+    display: flex; 
+    flex-flow: row nowrap;    
+    justify-content: space-around;
+}
+
+#Nav-buttons{
+    justify-content: space-between;
+    align-self: flex-end;
+    width: auto;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+nav > div > img{
+    height: 80px;
+}
+
+.Nav-Links{
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 0 10px 0 10px;
+    font-size: 20px;
+}
+
+#Get-Franchise{
+    padding: 10px;
+    border-color: var(--secondary-color);
+    font-size: 18px;
+    border-width: 1px;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+#Order-button{
+    padding: 10px;
+    border-color: orangered;
+    background-color: orangered;
+    font-size: 18px;
+    border-width: 1px;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+#Order-button > span{
+    border-width: 0px;
+    border-color: orangered;
+    background-color: white;
+    border-radius: 200%;
+    border-style: solid;
+    padding: 4px;
+    color: orangered;
+}
+
+#banner > img{
+    height: 80dvh;
+    width: 100dvw;
+}
+
+#Welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px
+}
+
+#Welcome > * {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+#Logo-text{
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.Welcome-text{
+    font-size: 40px;
+}
+
+#Welcome > p{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: gray;
+}
+
+#Brand_Container{
+display: flex;
+flex-flow: row wrap;
+column-gap: 30px;
+}
+
+.Brand_Cards{
+
+}
+
+.Brand_Cards > a> img{
+    background-color: white;
+}
+
+.Brand_Cards > a > p {
+    align-self: flex-start;
+    padding: 10px;
+    margin-top: 40px;
+    text-align: center;
+    border-color: var(--secondary-color);
+    border-radius: 30px;
+    border-style: solid;
+    border-width: .1px;
+}
+
+footer{
+    height: 500px;
+}

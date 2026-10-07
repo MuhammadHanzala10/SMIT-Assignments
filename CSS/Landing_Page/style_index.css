@@ -1,0 +1,146 @@
+:root{
+    --primary-color: #2a2d3e;   
+    --secondary-color: #1b1f2b;
+    --text-color: rgba(255, 255, 255, 0.945);
+}
+
+body{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 0px;
+    text-align: center;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+nav{
+    background-color: var(--secondary-color);
+    height: 25px;
+    padding: 10px;
+}
+
+.nav-button{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 10px;
+    margin-left: 10px;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-color: var(--text-color);
+}
+
+.nav-button:hover{
+    border-style: groove;
+    border-top: 5px;
+    border-bottom: 5px;
+    height: 20px;
+    padding: 10px;
+}
+
+#current{
+    border-style: groove;
+    border-top: 5px;
+    border-bottom: 5px;
+    height: 20px;
+    padding: 10px;
+}
+
+#P1{
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-color: var(--secondary-color);
+    border-style: solid;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    width: 80%;
+    justify-self: center;
+    justify-content: center;
+}
+
+#Sec1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.box{
+    border-color: var(--secondary-color);
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    background-color: var(--secondary-color);
+    width: 40%;
+    height: 500px;
+    justify-content: center;
+}
+
+#Pilot_image{
+    height: 500px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+#aircraft_heading{
+    font-size: xx-large;
+}
+
+#aircraft{
+    background-color: var(--secondary-color);
+    width: 90%;
+    height: 350px;
+    justify-self: center;
+    margin-top: 50px;
+    border-radius: 50px;
+    overflow-x: scroll;
+    display: flex;
+    flex-flow:row nowrap;
+    margin-bottom: 500px;
+}
+
+#aircraft::-webkit-scrollbar{
+    height: 5px;
+}
+
+#aircraft::-webkit-scrollbar-track{
+    width: 300px;
+    overflow: hidden;
+    background: transparent;
+}
+
+#aircraft::-webkit-scrollbar-thumb{
+    
+    border-radius: 50px;
+    background-color: var(--primary-color);
+}
+
+#cards{
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    height: 80%;
+    align-self: center;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+#cards:hover{
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+.aircraft_images{
+    width: 320px;
+    height: 180px;
+    border-radius: 50px;
+}
+
+.card_text{
+    margin-top: 10%;
+    font-size: large;
+}
