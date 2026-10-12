@@ -1,0 +1,46 @@
+:root{
+    --primary-color: white;
+    --secondary-color: rgba(0, 100, 224);
+    --text-color: rgba(17, 17, 18);
+}
+
+*{
+    margin:0px;
+}
+
+body{
+    display: flex;;
+    justify-content: center;
+    align-content: center;
+}
+
+#Form{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 6dvh;
+    width: 37dvw;
+}
+
+#arrow{
+    height: 20px;
+    width: 20px;
+}
+
+#intro-head{
+    font-family: Optimistic, Helvetica, Arial, sans-serifs;
+    font-style: normal;
+    color: #171718;
+    line-height: 28px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#Form > p{
+    font-family: Optimistic, Helvetica, Arial, sans-serifs;
+    font-style: normal;
+    color: #171718;
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+}
