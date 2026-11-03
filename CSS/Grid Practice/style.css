@@ -1,0 +1,16 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 10dvw);
+    background-color: chartreuse;
+}
+
+section > div{
+    height: .50dvh;
+    width: 8dvw;
+    background-color: aqua;
+}

@@ -1,0 +1,35 @@
+:root{
+    --primary-color: #61BB46;
+    --secondary-color: #1B5EA4;
+    --text-color: #0A0A0A;
+}
+
+*{
+    margin: none;
+    padding: none;
+}
+
+nav{
+    
+}
+
+nav > div{
+    height: ;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-content: center;
+}
+
+#Nav1{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Nav2{
+    width: 100%;
+    height: 50px
+}

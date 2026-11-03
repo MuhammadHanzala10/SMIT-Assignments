@@ -47,6 +47,10 @@ nav{
     padding: 10px;
 }
 
+#current:hover{
+    cursor: pointer;
+}
+
 #P1{
     padding: 5px;
     margin-top: 20px;

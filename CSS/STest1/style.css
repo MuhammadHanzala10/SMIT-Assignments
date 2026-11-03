@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: var(--primary-color);
+    background-color: #0F0F0F;
     color: var(--text-color);
 }
 
@@ -77,6 +77,7 @@ nav > div > img{
 }
 
 #Welcome{
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +90,7 @@ nav > div > img{
     margin-bottom: 10px;
 }
 
-#Logo-text{
+.Logo-text{
     font-size: 44px;
     font-weight: 600;
 }
@@ -108,10 +109,7 @@ nav > div > img{
 display: flex;
 flex-flow: row wrap;
 column-gap: 30px;
-}
-
-.Brand_Cards{
-
+margin-bottom: 50px;
 }
 
 .Brand_Cards > a> img{
@@ -129,6 +127,14 @@ column-gap: 30px;
     border-width: .1px;
 }
 
+#RFranchises_Container{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
 footer{
+    /* margin-top: 300px; */
     height: 500px;
 }
