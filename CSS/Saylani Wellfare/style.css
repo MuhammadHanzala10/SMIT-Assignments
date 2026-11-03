@@ -5,16 +5,30 @@
 }
 
 body{
-    justify-self: center;
-    max-width: 1400px;
     margin: 0;
     padding: 0;
-    font-family: "Times New Roman";
+    color: #111;
+    background: #fbfdfb;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+button{
+    transition: transform 180ms ease;
+}
+
+button:hover{
+    transform: scale(1.04);
+}
+
+@media (prefers-reduced-motion: reduce){
+    button{
+        transition: none;
+    }
 }
 
 nav{
@@ -36,6 +50,10 @@ nav > div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.Hover_Green:hover{
+    color: var(--primary-color);
 }
 
 #Logo{
@@ -113,5 +131,367 @@ nav > div{
 }
 
 main{
+    width: calc(100% - 64px);
+    max-width: 1250px;
+    min-height: 620px;
+    margin: 0 auto;
+    padding: 28px 0 64px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 56px;
+}
 
+#Introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#Introduction .Hero_Badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #eaf6e7;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#Introduction h1{
+    margin: 0 0 28px;
+    font-size: clamp(44px, 5.2vw, 72px);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1.1;
+}
+
+#Introduction h1 span{
+    color: var(--primary-color);
+}
+
+#Introduction p{
+    max-width: 600px;
+    margin: 0;
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.Hero_Actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 48px;
+}
+
+.Hero_Actions button{
+    min-height: 62px;
+    padding: 0 38px;
+    border: 2px solid #e5e5e5;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--primary-color);
+    font: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Hero_Actions button:first-child{
+    border-color: transparent;
+    background: linear-gradient(110deg, var(--primary-color), #348e1d);
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(58, 148, 32, 0.18);
+}
+
+#Image_Card{
+    width: 100%;
+    min-width: 0;
+}
+
+#Image_Card > div{
+    width: 100%;
+    height: min(600px, 42vw);
+    min-height: 420px;
+    border: 4px solid #e8e8e8;
+    border-radius: 44px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 44px rgba(0, 0, 0, 0.14);
+}
+
+#Image_Card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Stats_Card{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.Stats_Card strong{
+    color: var(--primary-color);
+    font-size: 36px;
+}
+
+.Stats_Card h2{
+    margin-top: 4px;
+    color: #111;
+    font-size: 18px;
+}
+
+.Stats_Card p{
+    margin-top: 4px;
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.Stats_Icon{
+    display: grid;
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+    place-items: center;
+    border-radius: 16px;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.Stats_Icon svg{
+    width: 32px;
+    height: 32px;
+}
+
+.Live_Appeals{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 48px 32px 64px;
+}
+
+.Appeals_Header{
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.Appeals_Badge{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 6px 16px;
+    border-radius: 999px;
+    background: #d7f8e9;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.Appeals_Header h2{
+    margin: 0;
+    color: #080808;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.Appeals_Header h2 span{
+    color: var(--primary-color);
+}
+
+.Appeals_Header p{
+    margin: 16px 0 0;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.Appeals_Grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.Appeal_Card{
+    min-width: 0;
+}
+
+.Appeal_Image{
+    position: relative;
+    height: auto;
+    aspect-ratio: 1.29;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #eee;
+}
+
+.Appeal_Image > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 220ms ease;
+}
+
+.Appeal_Card:hover .Appeal_Image > img{
+    transform: scale(1.04);
+}
+
+.Appeal_Icon{
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    display: grid;
+    width: 56px;
+    height: 56px;
+    place-items: center;
+    border-radius: 16px;
+    background: #fff;
+    color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.Appeal_Icon svg{
+    width: 30px;
+    height: 30px;
+}
+
+.Appeal_Card h3{
+    margin: 24px 0 12px;
+    color: #172033;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.Appeal_Card > p{
+    display: -webkit-box;
+    min-height: 60px;
+    margin: 0 0 14px;
+    overflow: hidden;
+    color: #758096;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.Appeal_Donate{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.Appeal_Donate span{
+    display: inline-block;
+    transition: transform 180ms ease;
+}
+
+.Appeal_Donate:hover span{
+    transform: translateX(4px);
+}
+
+@media (max-width: 1000px){
+    .Appeals_Grid{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 32px;
+    }
+}
+
+@media (max-width: 800px){
+    main{
+        width: min(100% - 40px, 620px);
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    #Image_Card > div{
+        height: 460px;
+    }
+
+}
+
+@media (max-width: 480px){
+    main{
+        width: calc(100% - 32px);
+        padding-top: 20px;
+    }
+
+    #Introduction h1{
+        font-size: clamp(40px, 12vw, 54px);
+        letter-spacing: -1px;
+    }
+
+    #Introduction p{
+        font-size: 17px;
+    }
+
+    #Image_Card > div{
+        min-height: 340px;
+        height: 90vw;
+        border-radius: 30px;
+    }
+
+    .Stats_Card{
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .Stats_Card strong{
+        font-size: 28px;
+    }
+
+    .Stats_Icon{
+        width: 48px;
+        height: 48px;
+        flex-basis: 48px;
+    }
+
+    .Live_Appeals{
+        padding: 32px 16px 48px;
+    }
+
+    .Appeals_Header{
+        margin-bottom: 32px;
+    }
+
+    .Appeals_Header h2{
+        font-size: 38px;
+    }
+
+    .Appeals_Header p{
+        font-size: 16px;
+    }
+
+    .Desktop_Break{
+        display: none;
+    }
+
+    .Appeals_Grid{
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .Appeal_Card h3{
+        margin-top: 16px;
+    }
+
+    .Appeal_Card > p{
+        min-height: 0;
+    }
 }
