@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Saylani Welfare</title>
 </head>
 <body>
     
@@ -181,26 +181,48 @@
     </section>
 
     <!-- Quick Donate -->
-    <section>
-        <div>
-            <h1>Quick Donate</h1>
+    <section id="Quick_Donate">
+        <header class="Quick_Header">
+            <h2>Quick <span>Donate</span></h2>
             <p>Choose your cause and make an impact today</p>
+        </header>
+        <nav class="Quick_Tabs" aria-label="Donation causes">
+            <span class="Quick_Tab Quick_Tab_Active" aria-current="true">General</span>
+            <span class="Quick_Tab">Daily Food</span>
+            <span class="Quick_Tab">Medical</span>
+            <span class="Quick_Tab">Welfare</span>
+            <span class="Quick_Tab">Education</span>
+        </nav>
+        <div class="Quick_Cards">
+            <article class="Quick_Card">
+                <img src="Assets/sadqa-animal-thumb.png" alt="Sadqa animal project supporting ethical animal sacrifice">
+                <span class="Quick_Badge">SADQA</span>
+                <div class="Quick_Card_Content">
+                    <div>
+                        <h3>Sadqa / Aqiqah Animal</h3>
+                        <p>Fulfill your Sadqa or Aqiqah through the sacrifice of animals in accordance with Islamic principles.</p>
+                    </div>
+                    <a class="Quick_Card_Donate" href="#Donate">DONATE NOW</a>
+                </div>
+            </article>
+            <article class="Quick_Card">
+                <img src="Assets/fitra-fidya-kaffara-thumb.png" alt="A child featured in Saylani's Fitra, Fidya and Kaffara appeal">
+                <span class="Quick_Badge">RAMZAN</span>
+                <div class="Quick_Card_Content">
+                    <div>
+                        <h3>Fitra, Fidya &amp; Kaffara</h3>
+                        <p>Fulfill your religious obligations through Fitra, Fidya, and Kaffara.</p>
+                    </div>
+                    <a class="Quick_Card_Donate" href="#Donate">DONATE NOW</a>
+                </div>
+            </article>
         </div>
-        <div>
-            <span>General</span>
-            <span>Daily Food</span>
-            <span>Medical</span>
-            <span>Welfare</span>
-            <span>Education</span>
-        </div>
-        <div id="Card_Container">
-            <div class="card">
-                <img src="">
-            </div>
-            <div>
-                <img src="">
-            </div>
-        </div>
+        <a class="Quick_Main_Donate" href="#Donate">DONATE NOW <span aria-hidden="true">&gt;</span></a>
+    </section>
+
+    <!-- Impact -->
+    <section>
+
     </section>
 
 </body>

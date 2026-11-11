@@ -403,10 +403,197 @@ main{
     transform: translateX(4px);
 }
 
+#Quick_Donate{
+    max-width: 1436px;
+    margin: 0 auto;
+    padding: 38px 32px 34px;
+    text-align: center;
+    background: #fff;
+}
+
+.Quick_Header h2{
+    margin: 0;
+    color: #080808;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.Quick_Header h2 span{
+    color: var(--primary-color);
+}
+
+.Quick_Header p{
+    margin: 16px 0 0;
+    color: #9298a5;
+    font-size: 18px;
+}
+
+.Quick_Tabs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 34px 0 48px;
+}
+
+.Quick_Tab{
+    display: inline-flex;
+    min-height: 36px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    border-radius: 999px;
+    color: #121212;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.Quick_Tab_Active{
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(35, 91, 25, 0.22);
+}
+
+.Quick_Cards{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    text-align: left;
+}
+
+.Quick_Card{
+    position: relative;
+    min-width: 0;
+    aspect-ratio: 1.78;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #063e40;
+    isolation: isolate;
+}
+
+.Quick_Card::after{
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.82) 100%);
+    content: "";
+    inset: 0;
+}
+
+.Quick_Card > img{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 220ms ease;
+}
+
+.Quick_Card:hover > img{
+    transform: scale(1.04);
+}
+
+.Quick_Badge{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 7px 18px;
+    border-radius: 999px;
+    background: #00a84f;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.Quick_Card_Content{
+    position: absolute;
+    right: 32px;
+    bottom: 30px;
+    left: 32px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    color: #fff;
+}
+
+.Quick_Card_Content > div{
+    max-width: 65%;
+}
+
+.Quick_Card_Content h3{
+    margin: 0 0 10px;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.Quick_Card_Content p{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.Quick_Card_Donate{
+    display: inline-flex;
+    min-height: 48px;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.Quick_Main_Donate{
+    display: inline-flex;
+    min-height: 50px;
+    align-items: center;
+    gap: 18px;
+    margin-top: 64px;
+    padding: 0 20px;
+    border-radius: 999px;
+    background: var(--primary-color);
+    box-shadow: 0 8px 14px rgba(35, 91, 25, 0.2);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.Quick_Main_Donate span{
+    font-size: 19px;
+    font-weight: 400;
+}
+
 @media (max-width: 1000px){
     .Appeals_Grid{
         grid-template-columns: repeat(2, minmax(0, 1fr));
         row-gap: 32px;
+    }
+
+    .Quick_Card_Content{
+        right: 22px;
+        bottom: 22px;
+        left: 22px;
+        gap: 12px;
+    }
+
+    .Quick_Card_Content h3{
+        font-size: 23px;
+    }
+
+    .Quick_Card_Content p{
+        font-size: 14px;
+    }
+
+    .Quick_Card_Donate{
+        min-height: 42px;
+        padding: 0 16px;
+        font-size: 12px;
     }
 }
 
@@ -419,6 +606,18 @@ main{
 
     #Image_Card > div{
         height: 460px;
+    }
+
+    #Quick_Donate{
+        padding: 36px 20px 48px;
+    }
+
+    .Quick_Cards{
+        grid-template-columns: 1fr;
+    }
+
+    .Quick_Card{
+        aspect-ratio: 1.55;
     }
 
 }
@@ -493,5 +692,71 @@ main{
 
     .Appeal_Card > p{
         min-height: 0;
+    }
+
+    .Quick_Header h2{
+        font-size: 38px;
+    }
+
+    .Quick_Header p{
+        font-size: 16px;
+    }
+
+    .Quick_Tabs{
+        display: grid;
+        width: 100%;
+        min-width: 0;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0;
+        margin: 26px 0 30px;
+    }
+
+    .Quick_Tab{
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 2px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .Quick_Card{
+        aspect-ratio: 1.15;
+        border-radius: 18px;
+    }
+
+    .Quick_Badge{
+        top: 16px;
+        right: 16px;
+    }
+
+    .Quick_Card_Content{
+        right: 18px;
+        bottom: 18px;
+        left: 18px;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .Quick_Card_Content > div{
+        max-width: 100%;
+    }
+
+    .Quick_Card_Content h3{
+        font-size: 22px;
+    }
+
+    .Quick_Card_Content p{
+        max-width: 360px;
+        font-size: 14px;
+    }
+
+    .Quick_Card_Donate{
+        min-height: 38px;
+    }
+
+    .Quick_Main_Donate{
+        margin-top: 36px;
     }
 }
