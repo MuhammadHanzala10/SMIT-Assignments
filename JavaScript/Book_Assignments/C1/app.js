@@ -15,3 +15,5 @@ alert("Happy Coding! \nPrevent this page from creating additional dialogs.");
 console.log("Hello... I can run JS through my web browser's console");
 
 // Q6
+
+// Q7
