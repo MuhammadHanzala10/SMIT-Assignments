@@ -11,3 +11,10 @@ document.write("My birth year is " + birthYear);
 document.write("<br>Datatype of declared variable is " + typeof birthYear);
 
 // Q4
+var name = prompt("Please enter your name");
+var prodTitle = prompt("Please enter the name of product");
+var quantity = +prompt("Enter the desired quantity of product")
+
+alert(name + " ordered " + quantity + " " + prodTitle + "(s) on XYZ Clothing Store.");
+
+                                            //END OF CHAPTER
