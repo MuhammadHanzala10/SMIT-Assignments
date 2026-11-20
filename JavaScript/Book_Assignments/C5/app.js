@@ -79,3 +79,51 @@ document.write("<br><br><h1>Marks Sheet</h1>");
 document.write("<br><br>Total marks: " + totMarks);
 document.write("<br>Marks obtained: " + obtMarks);
 document.write("<br>Percentage: " + percentage);
+
+//Q9
+var USD = 10;
+var exchUSD = 104.8; 
+var SAR = 25;
+var exchSAR = 28;
+var PKR = (USD * exchUSD) + (SAR * exchSAR);
+
+document.write("<br><h1>Currency in PKR</h1><br><br>");
+document.write("Total Currency in PKR: " + PKR);
+
+//Q10
+var numb = 45;
+let calc = ((numb + 5) * 10) / 2;
+
+//Q11
+var yearCurrent = 2026;
+var yearBorn = 2007;
+
+document.write("<br><br><h1>Age Calculator</h1><br>");
+document.write("Current Year: " + yearCurrent);
+document.write("<br>Birth Year: " + yearBorn);
+document.write("<br>Your Age is: " + (yearCurrent - yearBorn) + " or " + (yearCurrent - yearBorn -1));
+
+//Q12
+var radius = 20;
+let circum = 2 * (3.14 * radius);
+let area = 3.14 * (radius ** 2);
+
+document.write("<br><br><h1>The Geometrizer</h1><br>");
+document.write("Radius of circle: " + radius);
+document.write("<br>The circumference is: " + circum);
+document.write("<br>The area is: " + area);
+
+//Q13
+let favSnack = "chips";
+let age = 19;
+let maxAge = 65;
+let perDay = 2;
+
+console.log("The Lifetime Supply Calculator");
+console.log("Favourite Snake: " + favSnack);
+console.log("Current Age: " + age);
+console.log("Estimated Maxiumum Age: " + maxAge);
+console.log("Amount of snacks per day: " + perDay);
+console.log("You will need " + ((maxAge - age) * perDay) + " " + favSnack + " to last you until the ripe old age of " + maxAge);
+
+                                                    //END OF CHAPTER
