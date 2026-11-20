@@ -54,3 +54,28 @@ var celcius = 54;
 console.log(celcius + 'C is ' + (celcius*9/5)+32 + 'F');
 var fahrenheit = 98;
 console.log(fahrenheit + 'F is ' + ((fahrenheit - 32) * 5 / 9) + 'C');
+
+//Q7
+var price1 = 650;
+var price2 = 100;
+var quant1 = 3;
+var quant2 = 7;
+const shipCharge = 100;
+let total = (price1*quant1) + (price2*quant2) + shipCharge;
+
+document.write("<h1>Shopping Cart</h1><br><br>")
+document.write("Price of item 1 is " + price1);
+document.write("<br>Quantity of item 1 is " + quant1);
+document.write("<br>Price of item 2 is " + price2);
+document.write("<br>Quantity of item 2 is " + quant2);
+document.write("<br>Total cost of your order is " + total);
+
+//Q8
+var totMarks = 980;
+var obtMarks = 804;
+var percentage = (obtMarks/totMarks)*100;
+
+document.write("<br><br><h1>Marks Sheet</h1>");
+document.write("<br><br>Total marks: " + totMarks);
+document.write("<br>Marks obtained: " + obtMarks);
+document.write("<br>Percentage: " + percentage);
