@@ -13,9 +13,9 @@ while (again == true)
         var answer = Math.floor(Math.random()*100) + 1;
         console.log(answer);
 
-        while (flag == false)
+        for (let i = 0; i < 20 && flag == false; i++)
         {
-            let userAnswer = +prompt("Enter the number: ");
+            let userAnswer = +prompt("Attempt number " + (i+1) + ". Enter the number: ");
             if (userAnswer == answer)
             {
                 alert("Correct answer!");
